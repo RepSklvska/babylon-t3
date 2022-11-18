@@ -42,7 +42,7 @@ export default () => {
 		scene.createDefaultXRExperienceAsync({
 			floorMeshes: [ground]
 		}).then(experience => {
-			// experience.baseExperience.enterXRAsync('immersive-vr', 'local-floor')
+			experience.baseExperience.enterXRAsync('immersive-vr', 'local-floor')
 			experience.baseExperience.camera.onAfterCameraTeleport.add(() => {
 				navigate("/scene2")
 			})
